@@ -1,0 +1,14 @@
+package pratik.java.Variable;
+
+public class Variable {
+
+	public static void main(String[] args) {
+
+		//int integer_number=56;
+		int   a=56;
+		//int number =56;
+		
+	System.out.println(a);	
+	}
+
+}

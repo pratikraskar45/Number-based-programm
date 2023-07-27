@@ -1,0 +1,16 @@
+package pratik.java.operators;
+
+public class Compound_assignment_operator {
+
+	public static void main(String[] args) {
+		
+		int a=20;
+		a+=20; //compound assignment operator
+		
+        //a=a+20;
+		
+	System.out.println(a);	
+
+	}
+
+}

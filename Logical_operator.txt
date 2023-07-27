@@ -1,0 +1,20 @@
+package pratik.java.operators;
+
+public class Logical_operator {
+
+	public static void main(String[] args) {
+		
+		int a=75;
+		int b=26;
+		int c=90;
+		
+	boolean res=a>b && a>c;
+	boolean res2=a>b || a>c;
+	
+	System.out.println(res);
+	System.out.println(res2);
+	
+	
+	}
+
+}

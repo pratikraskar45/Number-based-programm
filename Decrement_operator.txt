@@ -1,0 +1,18 @@
+package pratik.java.operators;
+
+public class Decrement_operator {
+
+	public static void main(String[] args) {
+		
+		int a=25;
+      
+		a=a-- + --a + a++ + ++a + a;
+		
+		System.out.println(a);
+
+		//there are two type of Decrement operator.
+		// 1)Pre Decrement(--i):-first write the update value then decrease the value by one.
+		// 2)Post Decrement(i--):-use the same value as it is & then update the value (by one).
+	}
+
+}

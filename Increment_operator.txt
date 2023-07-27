@@ -1,0 +1,20 @@
+package pratik.java.operators;
+
+public class Increment_operator {
+
+	public static void main(String[] args) {
+		
+		int i=10;
+
+		i=i++ + i++ + ++i + ++i + i;
+		
+	
+		System.out.println(i);
+	
+	
+	//there are two type of increment operator.
+	// 1)Pre increment(++i):-first write the update value then increase the value by one.
+	// 2)Post increment(i++):-use the same value as it is & then update the value (by one).
+	}
+
+}
