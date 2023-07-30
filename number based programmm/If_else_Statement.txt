@@ -1,0 +1,17 @@
+package pratik.java.decision_making_statement;
+
+public class If_else_Statement {
+
+	public static void main(String[] args) {
+		int a=21;
+		
+	    if (a%2==0)  
+  {
+  System.out.println("It is a divided by 2");
+   }
+       else
+  {
+	System.out.println("It is Odd");
+   }
+	}
+	}

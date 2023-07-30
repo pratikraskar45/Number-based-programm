@@ -1,0 +1,14 @@
+package pratik.java.Assignment_control.making_statment;
+
+public class WAJP_ToPrint_NoFrom1to100 {
+
+	public static void main(String[] args) {
+		int i;
+		for(i=1;i<101;i++)
+		{
+			System.out.println(i);
+		}
+       
+	}
+
+}

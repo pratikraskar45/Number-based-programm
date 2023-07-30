@@ -1,0 +1,16 @@
+package pratik.java.Assignment_control.making_statment;
+
+public class WAJP_ProductOf_N_no {
+
+	public static void main(String[] args) {
+		int sum=1; int n=11;        //Q.WAJP to find product of n no. 
+				for(int i=1;i<n;i++) 
+				{
+					sum*=i;
+				}
+		{
+			System.out.println(sum);
+		}
+	}
+
+}

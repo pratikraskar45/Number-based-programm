@@ -1,0 +1,14 @@
+package pratik.java.Assignment_control.making_statment;
+
+public class WAJP_Sum_N_Number {
+
+	public static void main(String[] args) {
+                            //Q.WAJP To Print sum n natural number.		
+		int sum =0;
+		for(int i=1;i<51;i++)
+		{
+		 sum+=i; System.out.println(sum);	
+		}
+	}
+
+}

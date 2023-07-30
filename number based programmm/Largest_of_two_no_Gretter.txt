@@ -1,0 +1,19 @@
+package pratik.java.decision_making_statement;
+
+public class Largest_of_two_no_Gretter {
+
+	public static void main(String[] args) {
+		 int a=10;
+		 int b=5;
+     if(a<b) 
+    {
+    	System.out.println("It is wrong");
+    }		 
+    else 
+    {
+    	System.out.println("It is correct");
+    }
+     
+	}
+
+}

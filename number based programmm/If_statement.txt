@@ -1,0 +1,19 @@
+package pratik.java.decision_making_statement;
+
+public class If_statement {
+
+	public static void main(String[] args) {
+		
+		int a=21;
+		
+	    if  (0%2==0)
+	{
+		System.out.println("IT IS EVEN");
+	}
+	{
+		System.out.println("IT IS ODD");
+	
+	}
+	}
+
+}
