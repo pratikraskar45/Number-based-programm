@@ -1,0 +1,49 @@
+package New_Object_laptop;
+
+public class Laptop {
+
+		//define attribute/properties
+		
+	  String brand;	
+	  double price;
+	  String processor;
+	  String ram;
+	
+
+}
+
+
+
+package New_Object_laptop;
+
+public class Laptop_Driver {
+
+	public static void main(String[] args) {
+		
+		Laptop l1=new Laptop();
+		l1.brand="LENOVO";
+		l1.price=54999.00;
+		l1.processor="Intel i3";
+		l1.ram="8GB";
+		
+	System.out.println(l1.brand);
+	System.out.println(l1.price);	
+	System.out.println(l1.processor);	
+	System.out.println(l1.ram);
+	
+	System.out.println("======================");
+	
+	    Laptop l2=new Laptop();
+	      l2.brand="Apple Mac Air M1";
+	      l2.price=123000.00;
+	      l2.processor="Intel i5";
+	      l2.ram="16GB";
+	      
+	      System.out.println(l2.brand);
+	  	System.out.println(l2.price);	
+	  	System.out.println(l2.processor);	
+	  	System.out.println(l2.ram);    
+	
+	}
+
+}

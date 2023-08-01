@@ -1,0 +1,38 @@
+package contructor_default_constructor;
+
+public class Car {
+	
+	static String brand="AUDI";
+	String name;
+	String color;
+	double price;
+	}
+
+
+package contructor_default_constructor;
+
+public class Car_Driver {
+
+	public static void main(String[] args) {
+		Car c1=new Car();
+		c1.name="Q7";
+		c1.color="Mythos Black Metallic";
+		c1.price=5039000.00;
+		System.out.println(c1.brand);
+		System.out.println(c1.name);
+		System.out.println(c1.color);
+		System.out.println(c1.price);
+		System.out.println("===================");
+		
+        Car c2=new Car();
+        c2.name="e-tron GT";
+        c2.color="Daytona Gray pearl effect";
+        c2.price=17030999.00;
+        System.out.println(c2.brand);
+		System.out.println(c2.name);
+		System.out.println(c2.color);
+		System.out.println(c2.price);
+        
+	}
+
+}

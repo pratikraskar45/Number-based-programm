@@ -1,0 +1,68 @@
+package assignment_student_class;
+  //Q.WAJP to create student class,email,password,cno three constructor with diffrent parameter
+public class Student {
+     	String name;
+	    String email;
+	    String password;
+	    int cno;
+ public Student (String name ,String email,String pass,int cno) 
+ {
+	 this.name=name;
+	 this.email=email;
+	 this.password=pass;
+	 this.cno=cno;
+ }
+ 
+ public Student (int cno,String name ,String email,String pass) 
+ {
+	 this.name=name;
+	 this.email=email;
+	 this.password=pass;
+	 this.cno=cno;
+ }
+ 
+ public Student (String email,String pass,int cno,String name) 
+ {
+	 this.name=name;
+	 this.email=email;
+	 this.password=pass;
+	 this.cno=cno;
+ }
+	
+	
+
+}
+
+
+
+package assignment_student_class;
+
+public class StudentDriver {
+
+	public static void main(String[] args) {
+     
+		Student s1=new Student("Jeevan","jeevan@gmail.com","jeeva@0004",800675483);
+		Student s2=new Student(982333587,"Tushar","tushar@gmail.com","tushar@45");
+		Student s3=new Student("patil@gamil.com","baivadyavryaa",993457007,"Vaibhav Patil");
+	
+	System.out.println(s1.name);
+	System.out.println(s1.cno);
+	System.out.println(s1.email);
+	System.out.println(s1.password);
+	
+	System.out.println("==================");
+	
+	System.out.println(s2.name);
+	System.out.println(s2.cno);
+	System.out.println(s2.email);
+	System.out.println(s2.password);
+	
+	System.out.println("========================");
+	
+	System.out.println(s3.name);
+	System.out.println(s3.cno);
+	System.out.println(s3.email);
+	System.out.println(s3.password);
+	}
+
+}

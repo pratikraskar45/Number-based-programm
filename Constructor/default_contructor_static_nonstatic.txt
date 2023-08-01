@@ -1,0 +1,52 @@
+package default_contructor_static_nonstatic;
+
+public class Pen { //attributes
+	static String brand="Cello";
+	static double price=10.00;
+	String color;
+	String name;
+
+public Pen() { //define no argument user defined constructor
+	System.out.println("Constructor");
+}
+static {
+	System.out.println("static 1");  //static
+}
+{
+	System.out.println("Non static 1");  //Non static
+}
+static {
+	System.out.println("static 2");  //static
+}
+{
+	System.out.println("Non static 2");  //Non static
+}
+}
+
+
+package default_contructor_static_nonstatic;
+
+public class PenDriver {
+
+	public static void main(String[] args) {
+		Pen p1=new Pen();   //constructor calling statement
+		p1.color="Blue";
+		p1.name="Pin.0.7";
+		
+	System.out.println(p1.brand);
+	System.out.println(p1.price);
+	System.out.println(p1.color);
+	System.out.println(p1.name);
+	System.out.println("==================");
+	
+	    Pen p2=new Pen();   //constructor calling statement
+	    p2.color="Black";
+	    p2.name="Gripeer";
+	
+    System.out.println(p2.brand);
+    System.out.println(p2.price);
+    System.out.println(p2.color);
+    System.out.println(p2.name);
+	}
+
+}

@@ -1,0 +1,63 @@
+package constructor_overloading_laptopObject;
+
+public class Laptop {
+
+	String brand;
+	double price;
+	String ram;
+	String processor;
+	
+	public Laptop() 
+	{
+		System.out.println("no argument constructor called");
+	}
+	public Laptop(double price,String brand) {
+		
+	}
+	public Laptop(String brand,String ram)
+	{
+	
+		this.brand=brand;
+		this.ram=ram;
+	}
+	public Laptop(String ram,String brand,String p)
+	{
+		
+		this.brand=brand;
+		this.ram=ram;
+		this.processor=p;
+		
+	}
+
+}
+
+
+
+package constructor_overloading_laptopObject;
+
+public class LaptopDriver {
+
+	public static void main(String[] args) {
+		Laptop l1=new Laptop();
+		Laptop l2=new Laptop(67000,"Lenovo");
+		Laptop l3=new Laptop("HP","16GB");
+		Laptop l4=new Laptop("16GB","Mac Air 2","Intel 5");
+		
+		System.out.println(l2.price);
+		System.out.println(l2.brand);
+		System.out.println("====================");
+		
+		System.out.println(l3.brand);
+		System.out.println(l3.ram);
+		System.out.println("====================");
+		
+		System.out.println(l4.ram);
+		System.out.println(l4.brand);
+		System.out.println(l4.processor);
+		
+		System.out.println("The end");
+
+
+	}
+
+}

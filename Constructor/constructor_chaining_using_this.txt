@@ -1,0 +1,51 @@
+package constructor_chaining_using_this;
+
+public class Laptop {
+	
+	String brand;
+	double price;
+	String ram;
+	String processor;
+	
+	public Laptop ()
+	{
+		
+		System.out.println("object loading started");
+	}
+	
+	public Laptop (String brand,String ram) {
+		this();        //this():-is used to called another constructor
+		this.brand=brand;
+		this.ram=ram;	
+	}
+	
+	public Laptop (String ram,String brand, String processor) {
+		
+		this(brand,ram);
+		this.processor=processor;
+		
+		
+	}
+
+}
+//constructor chaining:-two type 1)this(); 2)Super();
+
+
+
+
+package constructor_chaining_using_this;
+
+
+public class LaptopDriver {
+
+	public static void main(String[] args) {
+		Laptop l1=new Laptop("16GB","HP","Intel");
+		Laptop l2=new Laptop();  //default
+		
+		System.out.println(l1.brand);
+		System.out.println(l1.ram);
+		System.out.println(l1.processor);
+
+	}
+
+}
