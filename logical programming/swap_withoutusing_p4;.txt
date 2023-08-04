@@ -1,0 +1,25 @@
+package swap_withoutusing_p4;
+import java.util.Scanner;
+public class SwapWithoutUsing3rd_variable {
+	
+
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter a value of a = ");	//10
+			int a=sc.nextInt();
+			System.out.println("Enter a value of b = ");	//20
+			int b=sc.nextInt();
+			
+			// Swap two numbers by without using 3rd variable
+			
+			a=a+b;
+			b=a-b;
+			a=a-b;
+			
+			System.out.println("a="+a);	//20
+			System.out.println("b="+b);	//10
+
+		}
+
+	}
+

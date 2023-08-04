@@ -1,0 +1,61 @@
+package method_static_NonStatic_CallingMethod_retrun;
+
+public class Calculator {
+	//a method to add two numbers
+	//static method-void type
+	
+	public static void addTwoNumbers(int a,int b) {
+		int res= a+b;
+		System.out.println(res+"sum of two numbers");
+	}
+	
+	//non-static method-void type
+	public void subTwoNumbers(int a,int b) {
+	      System.out.println(a-b);
+	}
+	
+	//static -int retrun type
+	
+	public static int proTwoNumbers(int a,int b) {
+		int pro = a*b;
+		return pro;
+	}
+	
+	//non static double retrun type
+	
+	public double divideTwoNumbers (int a,int b) {
+		return a/b ;
+		
+	}
+
+}
+
+
+
+package method_static_NonStatic_CallingMethod_retrun;
+
+public class CalculatorDriver {
+
+	public static void main(String[] args) {
+		
+       //Calculator.addTwoNumbers(50,30);  //using class name
+		Calculator c = new Calculator();
+		 c.addTwoNumbers(30, 10); //non static can be //called only be object refrence
+		 
+		
+		//non static can be called only by object refrence 
+		 Calculator c1=new Calculator();
+		 c1.subTwoNumbers(30,10);
+		
+		 
+		 //calling a method having int as retrun type
+	      int pro= Calculator.proTwoNumbers(12, 12);
+		  System.out.println(pro);
+		 
+		  
+		  //caling a NSM having double as its retrun type
+		  Calculator c2= new Calculator();
+		  System.out.println(c2.divideTwoNumbers(50, 10));
+	}
+
+}
