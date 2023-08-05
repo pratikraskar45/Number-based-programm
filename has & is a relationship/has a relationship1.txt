@@ -1,0 +1,194 @@
+package has_a_relationship_p2;
+
+public class Sim1 {
+	private String brand;
+	private String type;
+	private long Cno;
+	public Sim1(String b,String t,long c) {
+		this.brand=b;
+		this.type=t;
+		this.Cno=c;
+		
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public long getCno() {
+		return Cno;
+	}
+	public void setCno(long cno) {
+		Cno = cno;
+	}
+	public void printSIM1() {
+		System.out.println("======SIM1======");
+		System.out.println(brand);
+		System.out.println(type);
+		System.out.println(Cno);
+	//	System.out.println("================");
+		
+	}
+
+}
+
+package has_a_relationship_p2;
+
+public class Sim2 {
+	private String brand;
+	private String type;
+	private long Cno;
+	public Sim2(String b,String t,long c) {
+		this.brand=b;
+		this.type=t;
+		this.Cno=c;
+		
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public long getCno() {
+		return Cno;
+	}
+	public void setCno(long cno) {
+		Cno = cno;
+	}
+	public void printSIM2() {
+		System.out.println("======SIM2======");
+		System.out.println(brand);
+		System.out.println(type);
+		System.out.println(Cno);
+		//System.out.println("================");
+		
+	}
+
+}
+
+
+
+
+
+package has_a_relationship_p2;
+
+public class Mobile {
+	private String brand;
+	private String name;
+	private String color;
+	private double price;
+	private Sim1 s1;
+	private Sim2 s2;
+	
+	public Sim1 getS1() {
+		return s1;
+	}
+
+	public void setS1(Sim1 s1) {
+		this.s1 = s1;
+	}
+
+	public Sim2 getS2() {
+		return s2;
+	}
+
+	public void setS2(Sim2 s2) {
+		this.s2 = s2;
+	}
+
+	public Mobile(String b,String n,String c,double p) {
+		this.brand=b;
+		this.name=n;
+		this.color=c;
+		this.price=p;
+		
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public void printMobileDetails() {
+		System.out.println("======Mobile Details======");
+		System.out.println(brand);
+		System.out.println(name);
+		System.out.println(color);
+		System.out.println(price);
+		s1.printSIM1();
+		s2.printSIM2();
+		System.out.println("================");
+		
+	}
+
+}
+
+
+
+
+package has_a_relationship_p2;
+
+public class MobileSimDriver {
+
+	public static void main(String[] args) {
+		Mobile m=new Mobile("APPLE","IPHONE15","BLACK",150000);
+		
+		
+		m.setS1(new Sim1("jio","5G",77777777777l));
+		
+		m.setS2(new Sim2("IDEA","4G",11111111111l));
+
+	
+		m.printMobileDetails();
+	}
+	
+
+	}
+
+
+
+
+
+
+

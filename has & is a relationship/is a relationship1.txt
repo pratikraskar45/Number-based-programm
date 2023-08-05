@@ -1,0 +1,43 @@
+package is_a_relationship;
+
+public class GrandFather {
+	public void buyLand() {
+		System.out.println("Grand Father bought a Land");
+	}
+
+}
+
+
+package is_a_relationship;
+
+public class Father extends GrandFather {
+	public void buildHouse() {
+		System.out.println("Father Built House");
+	}
+
+}
+
+
+
+package is_a_relationship;
+
+public class Son extends Father {
+	public void buyCar() {
+		System.out.println("Son Bought a Car");
+	}
+
+}
+
+
+package is_a_relationship;
+
+public class FamilyDriver {
+	public static void main(String[] args) {
+		Son s=new Son();
+		s.buyLand();
+		s.buildHouse();
+		s.buyCar();
+		
+	}
+
+}

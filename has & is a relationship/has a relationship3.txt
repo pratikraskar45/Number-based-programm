@@ -1,0 +1,141 @@
+package relationshipInJava_has_a_relationship;
+
+public class Engine {
+   private String brand;
+   private String cubic_capacity;
+   
+//   ==================CONSTRUCTOR===========
+   
+   public Engine (String brand,String cc) {
+	   this.brand=brand;
+	   this.cubic_capacity=cc;
+   }
+   public void setBrand (String brand) {
+	   if (brand==null) {
+		   System.out.println("null is not allowed");
+	   }else {
+		   this.brand=brand;
+		   System.out.println(" Engine not present");
+	   
+	   }
+	   }
+	   public String getBrand()
+	   {
+		   return brand;
+   }
+public String getCubic_capacity() {
+	return cubic_capacity;
+}
+public void setCubic_capacity(String cubic_capacity) {
+	this.cubic_capacity = cubic_capacity;
+}
+
+public void printEngine() {
+	System.out.println("=========Engine Details===========");
+	System.out.println(brand);
+	System.out.println(cubic_capacity);
+	System.out.println("===========================");
+}
+}
+
+
+
+package relationshipInJava_has_a_relationship;
+
+public class Car {
+	private String brand;
+	private String name;
+	private String color;
+	private double price;
+
+//	 ================  Indirect engine private callinh==========
+	
+	private Engine Engine;
+	
+	public Car(String b,String n,String c,double p) {
+		this.name=b;
+		this.brand=n;
+		this.color=c;
+		this.price=p;
+		
+	}
+  //getters and setters for car
+	
+	public String getBrand() {
+		return brand;
+	}
+
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+	public double getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+ //getters and setters for engine
+	public Engine getEngine() {
+		return Engine;
+	}
+
+	public void setEngine(Engine engine) {
+		Engine = engine;
+	}
+
+	public void printCarDetails() {
+		System.out.println("===========Car Details =============");
+		System.out.println(name);
+		System.out.println(brand);
+		System.out.println(color);
+		System.out.println(price);
+		if(Engine != null) {
+			Engine.printEngine();
+			}else {
+			System.out.println("Engine is not present");
+		   }
+		
+	}
+	}
+
+	
+
+
+package relationshipInJava_has_a_relationship;
+
+public class CarEngineDriver {
+
+	public static void main(String[] args) {
+		Car c1=new Car("BMW", "X1", "White", 6500000);
+		c1.printCarDetails();
+		c1.setEngine(new Engine ("M5","2500CC"));
+		c1.printCarDetails();
+
+	}
+}
