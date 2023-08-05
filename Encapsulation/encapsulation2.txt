@@ -1,0 +1,60 @@
+package encapsulation;
+
+public class Student {
+	private int id;
+	private String name;
+	private String email;
+	private long cno;
+	
+	//setter and getters for all
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public long getCno() {
+		return cno;
+	}
+	public void setCno(long cno) {
+		this.cno = cno;
+	}
+	
+	
+	
+	
+}
+
+
+
+package encapsulation;
+
+public class StudentDriver {
+
+	public static void main(String[] args) {
+		Student student=new Student();
+		student.setId(7777);
+		student.setName("Jeevan");
+		student.setEmail("jeevan007@gmail.com");
+		student.setCno(8686868686l);
+		
+		System.out.println(student.getId());
+		System.out.println(student.getName());
+		System.out.println(student.getEmail());
+		System.out.println(student.getCno());
+	}
+
+}

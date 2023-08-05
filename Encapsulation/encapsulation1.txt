@@ -1,0 +1,71 @@
+package encapsulation;
+
+public class Employee {
+	private String company_name;
+	private int id;
+	private String name;
+	private String designation;
+	private double salary;
+	
+	
+	//getters and setters
+	
+	public String getCompany_name() {
+		return company_name;
+	}
+	public void setCompany_name(String company_name) {
+		this.company_name = company_name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+		
+	}
+	
+
+package encapsulation;
+
+public class EmployeeDriver {
+
+	public static void main(String[] args) {
+		Employee e=new Employee();
+		e.setCompany_name("TCS");
+		e.setId(1234);
+		e.setName("Tushar Mane");
+		e.setDesignation("Fresher Devloper");
+		e.setSalary(28000);
+		
+		
+		System.out.println(e.getCompany_name());
+		System.out.println(e.getId());
+		System.out.println(e.getName());
+		System.out.println(e.getDesignation());
+		System.out.println(e.getSalary());
+		}
+
+}
+
+
+
