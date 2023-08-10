@@ -1,0 +1,34 @@
+package variable_shoadowing_c_t_ploy;
+
+public class A {
+	static int i=10;
+	int j=20;
+
+}
+
+
+package variable_shoadowing_c_t_ploy;
+
+public class B extends A {
+	static int i=40;
+	int j=60;
+
+}
+
+package variable_shoadowing_c_t_ploy;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+//		case1
+		
+		A a=new B();
+		System.out.println(a.i);
+		System.out.println(a.j);
+		
+		
+	}
+
+}
+
