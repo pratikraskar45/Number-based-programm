@@ -1,0 +1,44 @@
+package method_shadowing_c_t_poly;
+   //Mathod Shadowing
+public class A {
+	public static void m1() {
+		System.out.println("Static method m1 in A");
+	}
+	public void m2() {
+		System.out.println("Non Static method m2 in A");
+
+		}
+
+}
+ 
+
+package method_shadowing_c_t_poly;
+
+public class B extends A{
+//	@override
+	public void m2() {
+		System.out.println("m2()overridden by B");
+
+	}
+	public static void m1() {
+		System.out.println("Static m m1 in B");
+
+	}
+
+}
+
+
+package method_shadowing_c_t_poly;
+
+public class A_B_Driver {
+
+	public static void main(String[] args) {
+		A a=new B();
+		a.m2();
+		a.m1();
+	}
+
+}
+
+
+
