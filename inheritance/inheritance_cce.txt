@@ -1,0 +1,53 @@
+package inheritance_cce;
+
+public class A {
+
+		int a=10;
+
+}
+
+package inheritance_cce;
+
+public class B extends A {
+	int j=20;
+
+}
+
+
+package inheritance_cce;
+
+public class C extends B {
+	int k=40;
+
+}
+
+
+package inheritance_cce;
+
+public class A_B_Driver {
+
+	public static void main(String[] args) {
+       
+		//case1
+		A a=new B();
+		B b=(B)a;
+		
+		System.out.println(b.j);
+		
+		//case2
+		A a1=new B(); //upcasting
+		C c=(C)a1; //downcasting to child class type
+		System.out.println(c.k);   //class cast exception
+		
+		//case3
+		A a3=new C();
+		B b2=(B)a3;
+		System.out.println(b.j);
+		
+	
+
+	}
+
+}
+
+
